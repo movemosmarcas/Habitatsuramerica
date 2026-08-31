@@ -1184,7 +1184,7 @@ body {
     }
     
     .fab-container {
-        bottom: 20px;
+        bottom: 85px; /* Evita superponerse con los botones nativos del navegador móvil (ej. Samsung Internet) */
         right: 20px;
     }
     
