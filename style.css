@@ -139,6 +139,7 @@ body {
 .hero-text-area {
     flex: 1;
     align-self: center;
+    max-width: 500px;
     animation: slideUpFade 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     animation-delay: 0.3s;
     opacity: 0;
