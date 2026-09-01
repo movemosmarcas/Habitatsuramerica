@@ -1295,3 +1295,46 @@ body {
     font-size: 2rem;
     font-weight: 500;
 }
+
+.wa-testimonial-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--primary-color);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.8rem 2.5rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.wa-testimonial-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(212, 168, 67, 0.4);
+}
+
+@media (max-width: 992px) {
+    .video-container-wrapper {
+        flex-direction: column !important;
+        gap: 3rem;
+    }
+    .video-container-wrapper.row-reverse {
+        flex-direction: column !important;
+    }
+    .video-column {
+        width: 100%;
+    }
+    .video-text {
+        width: 100%;
+        text-align: center;
+    }
+    .video-text .section-title {
+        text-align: center;
+    }
+}
