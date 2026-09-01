@@ -1274,3 +1274,24 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(212, 168, 67, 0.6);
 }
+
+.header-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header-divider {
+    width: 2px;
+    height: 40px;
+    background-color: var(--secondary-color);
+}
+
+.header-location {
+    font-family: var(--font-heading);
+    color: var(--text-light);
+    font-size: 2rem;
+    font-weight: 500;
+}
