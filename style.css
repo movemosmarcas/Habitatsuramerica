@@ -1126,6 +1126,7 @@ body {
     z-index: 1;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%);
 }
+}
 /* Gallery Section */
 .gallery-section {
     padding: 4rem 2rem;
