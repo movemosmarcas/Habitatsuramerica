@@ -1381,3 +1381,14 @@ body {
 .testimonials-section {
     margin-bottom: 4rem;
 }
+
+.highlight-ochre {
+    background-color: var(--secondary-color);
+    color: var(--text-light); /* Changed to light for better contrast, actually let's use dark */
+    color: var(--primary-color);
+    padding: 0.2rem 1.5rem;
+    border-radius: 8px; /* Slightly softer rectangle */
+    display: inline-block;
+    margin-top: 0.8rem;
+    box-shadow: 0 4px 15px rgba(212, 168, 67, 0.4); /* Glow effect */
+}
