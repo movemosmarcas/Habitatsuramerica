@@ -1424,3 +1424,12 @@ body {
 .testimonial-card .video-box:hover .video-thumb {
     transform: scale(1.45) !important;
 }
+
+.wa-testimonial-btn {
+    white-space: nowrap;
+}
+.wa-testimonial-btn svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
