@@ -1368,3 +1368,16 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+.testimonial-card .video-box {
+    aspect-ratio: 16 / 9;
+    height: auto !important;
+    border-radius: 16px !important;
+}
+.testimonial-card .video-thumb {
+    object-fit: cover;
+    object-position: center;
+}
+.testimonials-section {
+    margin-bottom: 4rem;
+}
