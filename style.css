@@ -1557,3 +1557,20 @@ body {
         margin-top: 2rem !important;
     }
 }
+
+@media (max-width: 576px) {
+    .contact-banner h2 {
+        font-size: 1.6rem !important;
+        white-space: nowrap !important;
+        letter-spacing: -0.5px !important;
+    }
+    .wa-testimonial-btn {
+        font-size: 0.85rem !important;
+        padding: 0.8rem 1.2rem !important;
+        gap: 0.5rem !important;
+    }
+    .wa-testimonial-btn svg {
+        width: 20px !important;
+        height: 20px !important;
+    }
+}
