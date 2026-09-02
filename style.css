@@ -1429,3 +1429,34 @@ body {
     height: 24px;
     flex-shrink: 0;
 }
+
+@media (max-width: 992px) {
+    .video-container-wrapper {
+        flex-direction: column !important;
+        height: auto !important;
+        min-height: auto !important;
+        max-height: none !important;
+        gap: 0 !important;
+    }
+    .video-container-wrapper.row-reverse {
+        flex-direction: column !important;
+    }
+    .video-column {
+        width: 100% !important;
+        height: 50vh !important;
+        min-height: 350px !important;
+        flex: none !important;
+    }
+    .video-text {
+        width: 100% !important;
+        text-align: center !important;
+        padding: 4rem 2rem !important;
+        flex: none !important;
+    }
+    .video-text .section-title {
+        text-align: center !important;
+    }
+    .contact-banner h2 {
+        font-size: 2.2rem !important;
+    }
+}
