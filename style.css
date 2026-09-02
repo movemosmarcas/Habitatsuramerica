@@ -1483,3 +1483,77 @@ body {
         font-size: 1.8rem !important;
     }
 }
+
+@media (max-width: 992px) {
+    /* Header & Logo */
+    .header {
+        position: relative !important;
+        background-color: var(--primary-color) !important;
+        padding: 1.5rem !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .header-container {
+        padding: 0 !important;
+        justify-content: center !important;
+    }
+    .logo {
+        height: 35px !important;
+        width: auto !important;
+    }
+    .header-location {
+        display: none !important; /* Hide the location text on mobile to save space if needed, or keep it. Actually let's hide it so logo fits */
+    }
+
+    /* Hero Structure */
+    .hero {
+        display: flex !important;
+        flex-direction: column !important;
+        min-height: auto !important;
+    }
+    .hero-slideshow {
+        position: relative !important;
+        height: 45vh !important;
+        min-height: 300px !important;
+        width: 100% !important;
+    }
+    .hero-overlay {
+        display: none !important;
+    }
+    
+    /* Hero Content Below Image */
+    .hero-content {
+        position: relative !important;
+        background-color: var(--bg-light) !important;
+        padding: 4rem 2rem !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .hero-text-area {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    
+    /* Text Colors */
+    .hero-eyebrow {
+        color: var(--primary-color) !important;
+        text-shadow: none !important;
+        text-align: center !important;
+        margin-bottom: 1rem !important;
+    }
+    .hero-title {
+        color: var(--primary-color) !important;
+        text-shadow: none !important;
+        text-align: center !important;
+        font-size: 2.2rem !important;
+    }
+    .hero-btn {
+        margin-top: 2rem !important;
+    }
+}
