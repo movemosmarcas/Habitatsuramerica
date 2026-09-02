@@ -572,7 +572,7 @@ body {
 .section-title {
     font-family: var(--font-heading);
     color: var(--primary-color); /* Brand green */
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     line-height: 1.2;
     font-weight: 600;
     margin-bottom: 1.5rem;
@@ -767,10 +767,10 @@ body {
 }
 
 .testimonials-grid {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
 }
 
@@ -1361,4 +1361,10 @@ body {
 
 .video-container-wrapper.row-reverse {
     flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
 }
