@@ -1460,3 +1460,26 @@ body {
         font-size: 2.2rem !important;
     }
 }
+
+@media (max-width: 992px) {
+    /* Editorial sections titles */
+    .video-text .section-title {
+        font-size: 1.8rem !important;
+    }
+    
+    /* Hero Quote */
+    .testimonial-hero p {
+        font-size: 1.5rem !important;
+    }
+    
+    /* Main Hero Title */
+    .hero-title {
+        font-size: 2.2rem !important;
+    }
+    
+    /* Gallery and Services Titles */
+    .gallery-title,
+    .services-main-title {
+        font-size: 1.8rem !important;
+    }
+}
