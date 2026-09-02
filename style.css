@@ -1355,3 +1355,7 @@ body {
         text-align: center;
     }
 }
+
+.video-container-wrapper.row-reverse {
+    flex-direction: row-reverse;
+}
