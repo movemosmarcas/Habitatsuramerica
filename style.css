@@ -762,7 +762,7 @@ body {
 
 /* Testimonials Section */
 .testimonials-section {
-    padding: 7rem 2rem;
+    padding: 7rem 2rem 2rem;
     background-color: var(--bg-light);
 }
 
@@ -1379,10 +1379,6 @@ body {
     object-position: center;
     transform: scale(1.35);
 }
-.testimonials-section {
-    margin-bottom: 4rem;
-}
-
 .highlight-ochre {
     background-color: var(--secondary-color);
     color: var(--text-light); /* Changed to light for better contrast, actually let's use dark */
