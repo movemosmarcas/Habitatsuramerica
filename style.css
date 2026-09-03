@@ -1502,7 +1502,8 @@ body {
         width: auto !important;
     }
     .header-location {
-        display: none !important; /* Hide the location text on mobile to save space if needed, or keep it. Actually let's hide it so logo fits */
+        display: block !important;
+        font-size: 1.4rem !important;
     }
 
     /* Hero Structure */
