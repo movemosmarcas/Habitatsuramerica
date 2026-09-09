@@ -1420,9 +1420,9 @@ body {
     background-repeat: no-repeat;
     opacity: 0;
 }
-.hero-slide:nth-child(1) { animation: fadeHero1 12s infinite; }
-.hero-slide:nth-child(2) { animation: fadeHero2 12s infinite; }
-.hero-slide:nth-child(3) { animation: fadeHero3 12s infinite; }
+.hero-slide:nth-child(1) { animation: fadeHero1 12s infinite, panImage 24s infinite alternate ease-in-out; }
+.hero-slide:nth-child(2) { animation: fadeHero2 12s infinite, panImage 24s infinite alternate ease-in-out; }
+.hero-slide:nth-child(3) { animation: fadeHero3 12s infinite, panImageFlipped 24s infinite alternate ease-in-out; }
 
 .testimonial-card .video-box:hover .video-thumb {
     transform: scale(1.45) !important;
@@ -1581,4 +1581,13 @@ body {
         width: 20px !important;
         height: 20px !important;
     }
+}
+
+@keyframes panImage {
+    0% { transform: scale(1.1) translateX(-1.5%); }
+    100% { transform: scale(1.1) translateX(1.5%); }
+}
+@keyframes panImageFlipped {
+    0% { transform: scaleX(-1.1) scaleY(1.1) translateX(-1.5%); }
+    100% { transform: scaleX(-1.1) scaleY(1.1) translateX(1.5%); }
 }
