@@ -1588,9 +1588,6 @@ body {
     100% { transform: scale(1.1) translateX(1.5%); }
 }
 
-    100% { transform: scaleX(-1.1) scaleY(1.1) translateX(1.5%); }
-}
-
 @keyframes panImageFlipped {
     0% { transform: scaleX(-1.1) scaleY(1.1) translateX(-1.5%); }
     100% { transform: scaleX(-1.1) scaleY(1.1) translateX(1.5%); }
