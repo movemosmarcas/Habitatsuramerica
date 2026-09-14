@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css?v=34">
+    <link rel="stylesheet" href="style.css?v=38">
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -51,8 +51,79 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="hero-text-area">
                     <div class="hero-eyebrow">UN CUIDADO DE LUJO</div>
                     <h1 class="hero-title">PARA VIVIR PLENAMENTE</h1>
-                    <button class="hero-btn" onclick="openFormModal()">AGENDA UNA VISITA PERSONALIZADA</button>
+                    
+                    <div class="form-card compact-form" style="margin-top: 1.5rem; text-align: left;">
+                        <h2 class="form-subtitle">Agenda tu visita hoy<br><span class="highlight-ochre">Residencias disponibles</span></h2>
+                        
+                        <form id="hero-contact-form" class="lead-form">
+                            <div class="form-group">
+                                <label for="nombre-hero">Nombre completo</label>
+                                <input type="text" id="nombre-hero" name="nombre" required placeholder="Ej. Juan Pérez">
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="celular-hero">Celular</label>
+                                    <input type="tel" id="celular-hero" name="celular" required placeholder="Ej. 300 123 4567">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email-hero">Email</label>
+                                    <input type="email" id="email-hero" name="email" required placeholder="correo@ejemplo.com">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="para_quien-hero">¿Para quién busca la residencia?</label>
+                                <select id="para_quien-hero" name="para_quien" required>
+                                    <option value="" disabled selected>Seleccione una opción</option>
+                                    <option value="Familiar">Familiar</option>
+                                    <option value="Para mi">Para mí</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="cuando-hero">¿Cuándo deseas tomar el servicio?</label>
+                                <select id="cuando-hero" name="cuando" required>
+                                    <option value="" disabled selected>Seleccione una opción</option>
+                                    <option value="Lo antes posible">Lo antes posible</option>
+                                    <option value="En menos de 1 mes">En menos de 1 mes</option>
+                                    <option value="En los próximos 3 meses">En los próximos 3 meses</option>
+                                    <option value="Aún no lo sé, solo busco información">Aún no lo sé, solo busco información</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>¿Cuál de nuestros servicios te interesa?</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="servicios_hero" value="Servicio de Residencia">
+                                        <span class="checkmark"></span>
+                                        Servicio de Residencia
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="servicios_hero" value="Alojamiento Temporal">
+                                        <span class="checkmark"></span>
+                                        Alojamiento Temporal
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="servicios_hero" value="Recuperación Poshospitalaria">
+                                        <span class="checkmark"></span>
+                                        Recuperación Poshospitalaria
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="servicios_hero" value="Centro Día">
+                                        <span class="checkmark"></span>
+                                        Centro Día
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">ENVIAR SOLICITUD</button>
+                        </form>
+                    </div>
                 </div>
+
             </div>
         </section>
 
