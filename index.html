@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css?v=34">
+    <link rel="stylesheet" href="style.css?v=39">
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -58,6 +58,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <section class="testimonial-hero" style="background-color: var(--bg-light); padding: 5rem 2rem; text-align: center;">
     <div style="max-width: 900px; margin: 0 auto;">
+        <div id="dynamic-price-container" style="margin-bottom: 1.5rem; text-align: center;">
+            <div id="dynamic-price" style="font-family: var(--font-heading); color: var(--primary-color); font-size: 2rem; font-weight: 700;">
+                Planes desde $12.800.000 COP
+            </div>
+        </div>
         <div style="margin-bottom: 3rem; display: flex; justify-content: center;">
             <a href="https://wa.me/573206872012?text=Hola%2C%20quisiera%20saber%20m%C3%A1s%20de%20los%20planes%20residenciales%20de%20H%C3%A1bitat%20Suram%C3%A9rica" target="_blank" class="wa-testimonial-btn">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -423,6 +428,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <script src="main.js?v=4"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("https://open.er-api.com/v6/latest/COP")
+                .then(response => response.json())
+                .then(data => {
+                    const basePriceCOP = 12800000;
+                    const rateUSD = data.rates.USD;
+                    const rateEUR = data.rates.EUR;
+                    
+                    const priceUSD = Math.round(basePriceCOP * rateUSD).toLocaleString('en-US');
+                    const priceEUR = Math.round(basePriceCOP * rateEUR).toLocaleString('de-DE');
+
+                    const priceElement = document.getElementById("dynamic-price");
+                    if (priceElement) {
+                        priceElement.innerHTML = `Planes desde $12.800.000 COP <span style="font-size: 1.2rem; color: #555; font-family: var(--font-body); font-weight: 400; display: block; margin-top: 0.5rem;">(Aprox. $${priceUSD} USD / &euro;${priceEUR} EUR)</span>`;
+                    }
+                })
+                .catch(error => console.error("Error fetching exchange rates:", error));
+        });
+    </script>
 </body>
 </html>
 <!-- Auto-deploy test -->
