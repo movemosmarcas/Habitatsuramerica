@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css?v=39">
+    <link rel="stylesheet" href="style.css?v=40">
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -58,9 +58,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <section class="testimonial-hero" style="background-color: var(--bg-light); padding: 5rem 2rem; text-align: center;">
     <div style="max-width: 900px; margin: 0 auto;">
-        <div id="dynamic-price-container" style="margin-bottom: 1.5rem; text-align: center;">
-            <div id="dynamic-price" style="font-family: var(--font-heading); color: var(--primary-color); font-size: 2rem; font-weight: 700;">
-                Planes desde $12.800.000 COP
+        <div class="price-bar">
+            <div class="price-col">
+                <div class="currency-label"><span class="flag">🇨🇴</span> COP</div>
+                <div class="price-amount">$ 12.800.000*</div>
+            </div>
+            <div class="price-col">
+                <div class="currency-label"><span class="flag">🇺🇸</span> USD</div>
+                <div class="price-amount" id="price-usd">...</div>
+                <div class="exchange-rate" id="rate-usd"></div>
+            </div>
+            <div class="price-col">
+                <div class="currency-label"><span class="flag">🇪🇺</span> EUR</div>
+                <div class="price-amount" id="price-eur">...</div>
+                <div class="exchange-rate" id="rate-eur"></div>
             </div>
         </div>
         <div style="margin-bottom: 3rem; display: flex; justify-content: center;">
@@ -440,13 +451,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                     const priceUSD = Math.round(basePriceCOP * rateUSD).toLocaleString('en-US');
                     const priceEUR = Math.round(basePriceCOP * rateEUR).toLocaleString('de-DE');
+                    
+                    const trmUSD = Math.round(1 / rateUSD).toLocaleString('es-CO');
+                    const trmEUR = Math.round(1 / rateEUR).toLocaleString('es-CO');
 
-                    const priceElement = document.getElementById("dynamic-price");
-                    if (priceElement) {
-                        priceElement.innerHTML = `Planes desde $12.800.000 COP <span style="font-size: 1.2rem; color: #555; font-family: var(--font-body); font-weight: 400; display: block; margin-top: 0.5rem;">(Aprox. $${priceUSD} USD / &euro;${priceEUR} EUR)</span>`;
-                    }
+                    document.getElementById("price-usd").innerText = `USD ${priceUSD}`;
+                    document.getElementById("rate-usd").innerText = `*TRM: $ ${trmUSD}`;
+                    
+                    document.getElementById("price-eur").innerText = `€ ${priceEUR}`;
+                    document.getElementById("rate-eur").innerText = `*Tasa de cambio: $ ${trmEUR}`;
                 })
-                .catch(error => console.error("Error fetching exchange rates:", error));
+                .catch(error => {
+                    console.error("Error fetching exchange rates:", error);
+                    document.getElementById("price-usd").innerText = "No disponible";
+                    document.getElementById("price-eur").innerText = "No disponible";
+                });
         });
     </script>
 </body>
