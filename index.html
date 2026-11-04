@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<!-- PREVIEW-STRIP-START -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hábitat Senior Living - Cuidado de Lujo</title>
+    <meta name="description" content="La tranquilidad del cuidado de lujo para el adulto mayor en Hábitat Suramérica. Agende su visita a nuestras sedes exclusivas.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="habitat_favicon.png" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css?v=42">
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -9,808 +23,460 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WFSQ859');</script>
 <!-- End Google Tag Manager -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<link rel="icon" href="habitat_favicon.png" type="image/png">
-<!-- PREVIEW-STRIP-END -->
-<title>Hábitat Country Club</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Vacaciones de 1 semana, 15 días o 1 mes para el adulto mayor en Hábitat Country Club: piscina, gimnasio, cine, jardines y gastronomía, con enfermería y asistencia 24/7.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
-<style>
-/* Layout: panel verde de club a la izquierda + foto aérea a la derecha; luego un recorrido de 10 experiencias en tarjetas alternadas, planes tipo "membresía" y formulario. */
-:root{
-  --verde:#2C3E2D; --verde-2:#22312A; --arena:#D4A843; --arena-osc:#B88F34;
-  --claro:#FAF6ED; --blanco:#FFFFFF; --tinta:#26302A; --gris:#5C6660; --linea:#E6E0D2;
-  --wa:#25D366;
-  --f-display:"Playfair Display", Georgia, "Times New Roman", serif;
-  --f-body:"Outfit", "Segoe UI", system-ui, -apple-system, sans-serif;
-  --gutter-l:max(16px, env(safe-area-inset-left, 0px));
-  --gutter-r:max(16px, env(safe-area-inset-right, 0px));
-  color-scheme:light;
-}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
-body{margin:0;background:var(--claro);color:var(--tinta);font-family:var(--f-body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--verde)}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:var(--f-display);font-weight:500;line-height:1.18;margin:0;text-wrap:balance}
-p{margin:0}
-.wrap{max-width:1180px;margin:0 auto;padding-left:var(--gutter-l);padding-right:var(--gutter-r)}
-.eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--arena-osc)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;padding:1rem 1.6rem;border-radius:2px;font-family:var(--f-body);font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background .25s,color .25s,border-color .25s,transform .25s}
-.btn:focus-visible,a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--arena);outline-offset:3px}
-.btn-arena{background:var(--arena);color:var(--verde)}
-.btn-arena:hover{background:var(--blanco)}
-.btn-ghost{border-color:rgba(255,255,255,.45);color:var(--blanco);background:rgba(255,255,255,.08)}
-.btn-ghost:hover{background:var(--blanco);color:var(--verde)}
-.btn-verde{background:var(--verde);color:var(--blanco)}
-.btn-verde:hover{background:var(--arena);color:var(--verde)}
-.btn-wa{background:var(--wa);color:var(--blanco)}
-.btn-wa:hover{filter:brightness(.93)}
-
-/* ---------- Barra fija de progreso ---------- */
-.topbar{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;background:rgba(44,62,45,.96);color:var(--blanco);transform:translateY(-120%);transition:transform .3s;box-shadow:0 8px 24px rgba(0,0,0,.15)}
-.topbar.show{transform:none}
-.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.6rem}
-.topbar-l{display:flex;align-items:center;gap:1rem;min-width:0}
-.topbar img{height:26px;width:auto;filter:brightness(0) invert(1)}
-.topbar-count{font-family:var(--f-display);font-style:italic;color:var(--arena);white-space:nowrap}
-.topbar-sub{color:#C9D2CB;font-size:.85rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.topbar .btn{padding:.6rem 1rem;font-size:.7rem}
-.bar{height:3px;background:rgba(255,255,255,.12)}
-.bar i{display:block;height:100%;width:0;background:var(--arena);transition:width .3s}
-@media (max-width:720px){.topbar-sub{display:none}}
-
-/* ---------- Hero ---------- */
-.hero{display:grid;grid-template-columns:1fr;background:var(--verde);color:var(--blanco)}
-@media (min-width:900px){.hero{grid-template-columns:48% 52%;min-height:640px}}
-.hero-panel{display:flex;flex-direction:column;justify-content:center;gap:1.5rem;padding-block:3.5rem;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
-@media (min-width:900px){.hero-panel{padding:4.5rem clamp(2.5rem,5vw,5rem)}}
-.lockup{display:flex;align-items:center;gap:1rem}
-.lockup img{height:44px;width:auto;filter:brightness(0) invert(1)}
-.lockup span{font-family:var(--f-display);font-style:italic;font-size:1.35rem;color:var(--arena);border-left:1px solid rgba(255,255,255,.3);padding-left:1rem;line-height:1}
-.hero-tag{align-self:flex-start;border:1px solid rgba(212,168,67,.45);background:rgba(0,0,0,.18);color:var(--arena);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;padding:.55rem 1rem;border-radius:2px}
-.hero h1{font-size:clamp(2rem,4.2vw,3.1rem)}
-.hero h1 em{color:var(--arena);font-weight:400}
-.hero-sub{color:#DCE3DD;font-weight:300;font-size:1.08rem;max-width:34rem}
-.hero-sub strong{color:var(--blanco);font-weight:500}
-.hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem}
-.hero-stays{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(255,255,255,.15);padding-top:1.4rem;margin-top:.4rem}
-.hero-stays div{padding-right:.8rem}
-.hero-stays div+div{border-left:1px solid rgba(255,255,255,.15);padding-left:.9rem}
-.hero-stays b{display:block;font-family:var(--f-display);font-weight:500;color:var(--arena);font-size:1.45rem;line-height:1.1}
-.hero-stays small{display:block;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#C9D2CB;margin-top:.3rem}
-.hero-photo{position:relative;min-height:340px;background:var(--verde-2)}
-.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero-badge{position:absolute;left:1.2rem;bottom:1.2rem;right:1.2rem;max-width:22rem;background:rgba(250,246,237,.95);color:var(--verde);padding:1rem 1.2rem;border-left:3px solid var(--arena);font-size:.9rem;line-height:1.45}
-.hero-badge b{display:block;font-family:var(--f-display);font-size:1.1rem;font-weight:600}
-
-/* ---------- Intro ---------- */
-.intro{text-align:center;padding-block:4.5rem 2.5rem}
-.intro .wrap{max-width:860px;display:flex;flex-direction:column;align-items:center;gap:1.2rem}
-.intro blockquote{margin:0;font-family:var(--f-display);font-style:italic;font-weight:400;font-size:clamp(1.4rem,3vw,2.15rem);line-height:1.4;color:var(--verde)}
-.rule{width:72px;height:3px;background:var(--arena)}
-.intro p{color:var(--gris);font-size:1.08rem;max-width:40rem}
-
-/* ---------- 10 experiencias ---------- */
-.exp{padding-block:1rem 4rem}
-.exp-nav{position:sticky;top:calc(env(safe-area-inset-top,0px) + 58px);z-index:30;background:var(--blanco);border:1px solid rgba(212,168,67,.25);border-radius:10px;box-shadow:0 6px 20px rgba(44,62,45,.08);padding:.8rem 1rem;display:flex;align-items:center;gap:1rem;margin-bottom:2.5rem}
-.exp-nav > span{font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--verde);white-space:nowrap}
-.pills{display:flex;gap:.4rem;overflow-x:auto;scrollbar-width:none;min-width:0}
-.pills::-webkit-scrollbar{display:none}
-.pill{flex:0 0 auto;width:36px;height:36px;border-radius:50%;border:1px solid var(--linea);display:grid;place-items:center;font-family:var(--f-display);font-weight:700;font-size:.78rem;color:var(--verde);text-decoration:none;transition:all .2s}
-.pill:hover{border-color:var(--arena)}
-.pill.active{background:var(--verde);color:var(--claro);border-color:var(--arena)}
-.exp-nav .go{margin-left:auto;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--verde);text-decoration:none;white-space:nowrap}
-.exp-nav .go:hover{color:var(--arena-osc)}
-@media (max-width:720px){.exp-nav > span,.exp-nav .go{display:none}}
-
-.cards{display:flex;flex-direction:column;gap:2.5rem}
-.card{display:grid;grid-template-columns:1fr;background:var(--blanco);border-radius:14px;overflow:hidden;box-shadow:0 18px 40px -18px rgba(44,62,45,.28);border:1px solid #EFEBE1;scroll-margin-top:150px;transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
-.js .card.pre{opacity:.001;transform:translateY(28px)}
-@media (min-width:960px){
-  .card{grid-template-columns:5fr 7fr}
-  .card.flip{grid-template-columns:7fr 5fr}
-  .card.flip .card-media{order:2}
-}
-.card-media{position:relative;min-height:280px;background:var(--verde-2)}
-.card-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.num{position:absolute;top:1rem;left:1rem;background:var(--verde);color:var(--arena);font-family:var(--f-display);font-size:1.6rem;line-height:1;padding:.55rem .9rem .5rem;border-radius:2px;box-shadow:0 4px 12px rgba(0,0,0,.2)}
-.num small{display:block;font-family:var(--f-body);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-top:.3rem}
-.card-body{padding:2rem 1.6rem;display:flex;flex-direction:column;justify-content:center;gap:1rem;min-width:0}
-@media (min-width:768px){.card-body{padding:3rem}}
-.card h3{font-size:clamp(1.5rem,2.6vw,2.15rem);color:var(--verde)}
-.card p.txt{color:var(--gris);font-size:1.04rem}
-.card p.txt strong{color:var(--tinta);font-weight:600}
-.plus{background:var(--claro);border-left:3px solid var(--arena);padding:.9rem 1rem;border-radius:0 6px 6px 0}
-.plus b{display:block;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--verde);margin-bottom:.2rem}
-.plus span{font-size:.93rem;color:#3E4842}
-.card-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.8rem;border-top:1px solid #F0ECE3;padding-top:1rem}
-.next{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--verde);text-decoration:none}
-.next:hover{color:var(--arena-osc)}
-.card-foot .btn{padding:.7rem 1.1rem;font-size:.7rem}
-
-/* Cine: bloque visual propio mientras no haya foto */
-.cine{position:absolute;inset:0;background:radial-gradient(120% 90% at 50% 0%,#3A2E1A 0%,#1A1712 55%,#0F0E0B 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;padding:2rem;text-align:center}
-.cine-screen{width:78%;aspect-ratio:16/8;max-width:100%;border-radius:4px;background:linear-gradient(180deg,#F7E7B8 0%,#D4A843 100%);box-shadow:0 0 60px 10px rgba(212,168,67,.35);display:grid;place-items:center;font-family:var(--f-display);font-style:italic;color:#2B2414;font-size:clamp(1rem,2.2vw,1.4rem);padding:1rem}
-.cine-seats{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;max-width:80%}
-.cine-seats i{width:22px;height:14px;border-radius:6px 6px 2px 2px;background:#7A2E2E;opacity:.9}
-.cine small{color:#CDBF9A;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase}
-
-/* Pausa a mitad de camino */
-.pause{background:var(--verde);color:var(--blanco);border-radius:14px;padding:2.5rem 1.6rem;text-align:center;display:flex;flex-direction:column;align-items:center;gap:1rem;border:1px solid rgba(212,168,67,.35)}
-@media (min-width:768px){.pause{padding:3.5rem}}
-.pause .chip{background:rgba(212,168,67,.18);color:var(--arena);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;padding:.4rem .9rem;border-radius:999px;font-weight:600}
-.pause h3{font-size:clamp(1.5rem,3vw,2.2rem);max-width:40rem}
-.pause h3 em{color:var(--arena)}
-.pause p{color:#D3DBD5;max-width:36rem}
-.pause .row{display:flex;flex-wrap:wrap;justify-content:center;gap:.8rem;margin-top:.4rem}
-
-/* ---------- Planes ---------- */
-.planes{background:var(--blanco);padding-block:5rem}
-.head{text-align:center;max-width:760px;margin:0 auto 3rem;display:flex;flex-direction:column;align-items:center;gap:.9rem}
-.head h2{font-size:clamp(1.9rem,4vw,3rem);color:var(--verde)}
-.head h2 em{color:var(--arena-osc)}
-.head p{color:var(--gris);font-size:1.05rem}
-.plan-grid{display:grid;grid-template-columns:1fr;gap:1.5rem;align-items:stretch}
-@media (min-width:900px){.plan-grid{grid-template-columns:repeat(3,1fr)}}
-.plan{position:relative;display:flex;flex-direction:column;gap:1.1rem;background:var(--claro);border:1px solid var(--linea);border-radius:14px;padding:2rem 1.6rem}
-.plan.star{background:var(--verde);color:var(--blanco);border-color:var(--arena);box-shadow:0 24px 50px -20px rgba(44,62,45,.55)}
-@media (min-width:900px){.plan.star{transform:translateY(-12px)}}
-.ribbon{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--arena);color:var(--verde);font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:.4rem .9rem;border-radius:999px;white-space:nowrap}
-.plan-dur{font-family:var(--f-display);font-size:2.4rem;line-height:1;color:var(--verde)}
-.plan.star .plan-dur{color:var(--arena)}
-.plan-name{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--arena-osc)}
-.plan.star .plan-name{color:#E9D6A6}
-.plan-desc{color:var(--gris);font-size:.97rem}
-.plan.star .plan-desc{color:#D3DBD5}
-.price{border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);padding-block:1rem;font-variant-numeric:tabular-nums}
-.plan.star .price{border-color:rgba(255,255,255,.18)}
-.price small{display:block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gris)}
-.plan.star .price small{color:#C9D2CB}
-.price b{display:block;font-family:var(--f-display);font-weight:600;font-size:1.9rem;color:var(--verde);line-height:1.2}
-.plan.star .price b{color:var(--blanco)}
-.price .usd{font-size:.82rem;color:var(--gris)}
-.plan.star .price .usd{color:#C9D2CB}
-.price b.tbd{font-size:1.15rem;font-family:var(--f-body);font-weight:600;letter-spacing:.02em}
-.feat{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.55rem;font-size:.95rem;flex:1}
-.feat li{display:flex;gap:.6rem;align-items:flex-start}
-.feat li::before{content:"";flex:0 0 auto;width:16px;height:16px;margin-top:.25rem;border-radius:50%;background:var(--arena) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.2l2.6 2.5L12 5.4' fill='none' stroke='%232C3E2D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat}
-.feat li.extra{font-weight:600}
-.plan .btn{width:100%}
-.incluye{margin-top:3rem;background:var(--claro);border:1px dashed rgba(184,143,52,.5);border-radius:14px;padding:1.6rem;display:grid;grid-template-columns:1fr;gap:1rem}
-@media (min-width:900px){.incluye{grid-template-columns:240px 1fr;align-items:center;padding:2rem 2.4rem}}
-.incluye h3{font-size:1.4rem;color:var(--verde)}
-.incluye ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.5rem 1.5rem;font-size:.95rem;color:#3E4842}
-.incluye li::before{content:"·";color:var(--arena-osc);font-weight:700;margin-right:.5rem}
-.fine{margin-top:1rem;text-align:center;font-size:.8rem;color:var(--gris)}
-
-/* ---------- Comparativa ---------- */
-.comp{padding-block:5rem}
-.table-box{overflow-x:auto;background:var(--blanco);border-radius:14px;border:1px solid var(--linea);box-shadow:0 12px 30px -18px rgba(44,62,45,.25)}
-table{width:100%;min-width:640px;border-collapse:collapse;font-size:.95rem}
-th,td{padding:1rem 1.2rem;text-align:left;vertical-align:top}
-thead th{background:var(--verde);color:var(--blanco);font-weight:600;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase}
-thead th.us{color:var(--arena)}
-tbody tr+tr td{border-top:1px solid #F0ECE3}
-td.us{color:var(--verde);font-weight:600;background:#FBF8F0}
-td.them{color:var(--gris)}
-
-/* ---------- Formulario ---------- */
-.form-sec{position:relative;padding-block:5rem;background:var(--verde-2) url("hero_slides/mer0484_1_opt.webp") center/cover no-repeat;color:var(--blanco)}
-.form-sec::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(26,38,28,.94) 0%,rgba(26,38,28,.82) 50%,rgba(26,38,28,.6) 100%)}
-.form-sec .wrap{position:relative;display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:center}
-@media (min-width:960px){.form-sec .wrap{grid-template-columns:1fr 460px}}
-.form-copy{display:flex;flex-direction:column;gap:1.2rem}
-.form-copy .eyebrow{color:var(--arena)}
-.form-copy h2{font-size:clamp(2rem,4vw,3rem)}
-.form-copy h2 em{color:var(--arena)}
-.form-copy p{color:#DCE3DD;font-size:1.05rem;max-width:34rem}
-.steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.8rem}
-.steps li{display:flex;gap:.9rem;align-items:flex-start;color:#E8EDE9}
-.steps b{flex:0 0 auto;width:28px;height:28px;border-radius:50%;background:var(--arena);color:var(--verde);display:grid;place-items:center;font-family:var(--f-display);font-size:.9rem}
-.form-card{background:var(--blanco);color:var(--tinta);border-radius:14px;padding:2rem 1.6rem;box-shadow:0 30px 60px -20px rgba(0,0,0,.5)}
-@media (min-width:768px){.form-card{padding:2.4rem}}
-.form-card h3{font-size:1.8rem;color:var(--verde)}
-.form-card > p{color:var(--gris);font-size:.92rem;margin:.4rem 0 1.4rem}
-.fields{display:flex;flex-direction:column;gap:1rem}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-@media (max-width:480px){.two{grid-template-columns:1fr}}
-label.l{display:block;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--verde);margin-bottom:.35rem}
-.fields input[type=text],.fields input[type=email],.fields input[type=tel],.fields input[type=month],.fields select{width:100%;border:0;border-bottom:1px solid #C9CFC9;background:transparent;padding:.55rem 0;font:inherit;font-size:1rem;color:var(--tinta);border-radius:0}
-.fields input:focus,.fields select:focus{outline:none;border-bottom-color:var(--verde)}
-.plan-pick{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}
-.plan-pick input{position:absolute;opacity:0;pointer-events:none}
-.plan-pick label{display:flex;flex-direction:column;align-items:center;gap:.1rem;border:1px solid var(--linea);border-radius:8px;padding:.7rem .3rem;cursor:pointer;text-align:center;transition:all .2s}
-.plan-pick label b{font-family:var(--f-display);font-size:1.05rem;color:var(--verde);font-weight:600}
-.plan-pick label small{font-size:.65rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gris)}
-.plan-pick input:checked + label{border-color:var(--verde);background:var(--verde)}
-.plan-pick input:checked + label b{color:var(--arena)}
-.plan-pick input:checked + label small{color:#D3DBD5}
-.plan-pick input:focus-visible + label{outline:3px solid var(--arena);outline-offset:2px}
-.check{display:flex;gap:.6rem;align-items:flex-start;font-size:.85rem;color:var(--gris)}
-.check input{margin-top:.25rem;accent-color:var(--verde);width:16px;height:16px}
-.check a{color:var(--verde)}
-.form-card button[type=submit]{width:100%;margin-top:.4rem}
-.form-msg{font-size:.88rem;padding:.8rem 1rem;border-radius:6px;background:#FBF3DC;color:#5A4413;border:1px solid #EBD597}
-.call{text-align:center;font-size:.85rem;color:var(--gris);margin-top:1rem}
-.call a{color:var(--verde);font-weight:600}
-
-/* ---------- FAQ ---------- */
-.faq{padding-block:5rem}
-.faq-list{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:.8rem}
-details{background:var(--blanco);border:1px solid var(--linea);border-radius:10px;padding:0 1.3rem}
-summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem;align-items:center;padding:1.1rem 0;font-family:var(--f-display);font-size:1.15rem;color:var(--verde)}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"+";font-family:var(--f-body);font-size:1.5rem;color:var(--arena-osc);line-height:1;flex:0 0 auto}
-details[open] summary::after{content:"–"}
-details p{color:var(--gris);padding-bottom:1.2rem}
-
-/* ---------- Testimonios + sede ---------- */
-.testi{background:var(--blanco);padding-block:5rem}
-.vids{display:grid;grid-template-columns:1fr;gap:1.5rem}
-@media (min-width:860px){.vids{grid-template-columns:repeat(3,1fr)}}
-.vid{display:flex;flex-direction:column;gap:.5rem}
-.vid-frame{position:relative;aspect-ratio:16/9;max-width:100%;border-radius:10px;overflow:hidden;background:var(--verde)}
-.vid-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.vid-link{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;color:var(--blanco);text-decoration:none;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
-.vid-link span{width:56px;height:56px;border-radius:50%;background:var(--arena);display:grid;place-items:center;color:var(--verde);font-size:1.3rem}
-.vid h3{font-family:var(--f-body);font-weight:700;font-size:1.05rem;color:var(--verde)}
-.vid p{color:var(--gris);font-size:.92rem}
-.sede{padding-block:5rem}
-.sede-box{display:grid;grid-template-columns:1fr;background:var(--blanco);border-radius:14px;overflow:hidden;border:1px solid var(--linea)}
-@media (min-width:860px){.sede-box{grid-template-columns:1fr 1fr}}
-.sede-box img{width:100%;height:100%;min-height:260px;object-fit:cover}
-.sede-info{padding:2.2rem 1.6rem;display:flex;flex-direction:column;gap:1rem;justify-content:center}
-@media (min-width:768px){.sede-info{padding:3rem}}
-.sede-info h2{font-size:clamp(1.7rem,3vw,2.4rem);color:var(--verde)}
-.sede-info p{color:var(--gris)}
-.sede-info .row{display:flex;flex-wrap:wrap;gap:.7rem}
-
-footer{background:var(--verde);color:#C9D2CB;font-size:.82rem;text-align:center}
-footer .wrap{padding-block:1.6rem calc(1.6rem + 70px)}
-footer a{color:var(--arena)}
-
-.fab{position:fixed;z-index:40;right:calc(1rem + env(safe-area-inset-right,0px));bottom:calc(1rem + env(safe-area-inset-bottom,0px));display:flex;gap:.6rem;opacity:0;transform:translateY(20px);pointer-events:none;transition:all .3s}
-.fab.show{opacity:1;transform:none;pointer-events:auto}
-.fab .btn{box-shadow:0 10px 24px rgba(0,0,0,.25)}
-.fab .btn-wa{padding:.95rem}
-</style>
 </head>
-<body class="nojs">
-<!-- PREVIEW-STRIP-START -->
+<body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFSQ859" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- PREVIEW-STRIP-END -->
-<script>document.body.classList.remove('nojs');document.body.classList.add('js');</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFSQ859"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-<!-- Barra fija con progreso del recorrido -->
-<div class="topbar" id="topbar" aria-hidden="true">
-  <div class="wrap">
-    <div class="topbar-l">
-      <img src="habitat_logo.png" alt="">
-      <span class="topbar-count" id="topCount">Experiencia 1 de 10</span>
-      <span class="topbar-sub">Vacaciones de club con respaldo médico 24/7</span>
-    </div>
-    <a href="#planes" class="btn btn-arena">Ver planes</a>
-  </div>
-  <div class="bar"><i id="topBar"></i></div>
-</div>
+        <header class="header">
+        <div class="header-container">
+            <img src="habitat_logo.png" alt="Hábitat Logo" class="logo">
+            <span class="header-divider"></span>
+            <span class="header-location">Suramérica</span>
+        </div>
+    </header>
 
-<!-- HERO -->
-<header class="hero">
-  <div class="hero-panel">
-    <div class="lockup"><img src="habitat_logo.png" alt="Hábitat"><span>Country Club</span></div>
-    <div class="hero-tag">Vacaciones para el adulto mayor · La Estrella, Antioquia</div>
-    <h1>Unas vacaciones de club para tus papás, <em>con el cuidado de Hábitat las 24 horas</em></h1>
-    <p class="hero-sub">Piscina, gimnasio, cine, jardines y cocina casera. Elige <strong>una semana, 15 días o un mes</strong> y vive la experiencia de Hábitat Country Club con enfermería y asistencia permanente día y noche.</p>
-    <div class="hero-ctas">
-      <a href="#planes" class="btn btn-arena">Ver los 3 planes</a>
-      <a href="#experiencias" class="btn btn-ghost">Las 10 experiencias</a>
-    </div>
-    <div class="hero-stays" aria-label="Duración de los planes">
-      <div><b>1 semana</b><small>Escapada</small></div>
-      <div><b>15 días</b><small>Temporada</small></div>
-      <div><b>1 mes</b><small>Vida de club</small></div>
-    </div>
-  </div>
-  <div class="hero-photo">
-    <img src="habitat_gallery/gemini_opt.webp" alt="Vista aérea de la piscina y los jardines de Hábitat Country Club al atardecer" fetchpriority="high">
-    <div class="hero-badge"><b>Enfermería 24/7 · 18 años</b>Un equipo médico y asistencial profesional acompaña cada día de tus vacaciones.</div>
-  </div>
-</header>
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-slideshow">
+                <div class="hero-slide" style="background-image: url('hero_slides/mer0484_1_opt.webp');"></div>
+                <div class="hero-slide" style="background-image: url('hero_slides/idea_1_opt.webp'); "></div>
+                <div class="hero-slide" style="background-image: url('hero_slides/mer0311_1_opt.webp');"></div>
+            </div>
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content">
+                <div class="hero-text-area">
+                    <div class="hero-eyebrow">UN CUIDADO DE LUJO</div>
+                    <h1 class="hero-title">PARA VIVIR PLENAMENTE</h1>
+                    <a href="https://wa.me/573206872012?text=Hola%2C%20quisiera%20saber%20m%C3%A1s%20de%20los%20planes%20residenciales%20de%20H%C3%A1bitat%20Suram%C3%A9rica" target="_blank" class="wa-testimonial-btn wa-hero-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.575-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        SOLICITA INFORMACIÓN
+                    </a>
+                </div>
+            </div>
+        </section>
 
-<section class="intro">
-  <div class="wrap">
-    <span class="eyebrow">Una pausa que se merecen</span>
-    <blockquote>“Las vacaciones no tienen edad. Lo que cambia es la tranquilidad que necesitas para disfrutarlas.”</blockquote>
-    <div class="rule"></div>
-    <p>Recorre las <strong>10 experiencias</strong> que vive un huésped de Hábitat Country Club y elige el plan que mejor se ajusta a tu familia.</p>
-  </div>
+        <section class="testimonial-hero" style="background-color: var(--bg-light); padding: 5rem 2rem; text-align: center;">
+    <div style="max-width: 900px; margin: 0 auto;">
+                <h3 style="font-family: var(--font-heading); color: var(--primary-color); font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem;">Planes de residencia asistida desde</h3>
+        <div class="price-bar">
+            <div class="price-col">
+                <div class="currency-label"><img src="https://flagcdn.com/w40/co.png" srcset="https://flagcdn.com/w80/co.png 2x" width="24" alt="Colombia" class="flag-icon"> COP</div>
+                <div class="price-amount">$ 12.800.000*</div>
+            </div>
+            <div class="price-col">
+                <div class="currency-label"><img src="https://flagcdn.com/w40/us.png" srcset="https://flagcdn.com/w80/us.png 2x" width="24" alt="USA" class="flag-icon"> USD</div>
+                <div class="price-amount" id="price-usd">...</div>
+                <div class="exchange-rate" id="rate-usd"></div>
+            </div>
+            <div class="price-col">
+                <div class="currency-label"><img src="https://flagcdn.com/w40/eu.png" srcset="https://flagcdn.com/w80/eu.png 2x" width="24" alt="Europa" class="flag-icon"> EUR</div>
+                <div class="price-amount" id="price-eur">...</div>
+                <div class="exchange-rate" id="rate-eur"></div>
+            </div>
+        </div>
+        <div style="margin-bottom: 3rem; display: flex; justify-content: center;">
+            <a href="https://wa.me/573206872012?text=Hola%2C%20quisiera%20saber%20m%C3%A1s%20de%20los%20planes%20residenciales%20de%20H%C3%A1bitat%20Suram%C3%A9rica" target="_blank" class="wa-testimonial-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.575-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                CONTÁCTANOS POR WHATSAPP
+            </a>
+        </div>
+    <p style="font-family: var(--font-heading); color: var(--primary-color); font-size: 2.2rem; font-style: italic; line-height: 1.4; margin: 0;">
+            &ldquo;Hábitat Suramérica fue diseñado para quienes buscamos siempre el bienestar y el confort de un cuidado de lujo, en un espacio privilegiado&rdquo;
+        </p>
+        </div>
 </section>
 
-<!-- LAS 10 EXPERIENCIAS -->
-<section class="exp" id="experiencias">
-  <div class="wrap">
-    <nav class="exp-nav" aria-label="Las 10 experiencias">
-      <span>Las 10 experiencias</span>
-      <div class="pills">
-        <a class="pill active" href="#exp-1" data-nav="1">01</a><a class="pill" href="#exp-2" data-nav="2">02</a><a class="pill" href="#exp-3" data-nav="3">03</a><a class="pill" href="#exp-4" data-nav="4">04</a><a class="pill" href="#exp-5" data-nav="5">05</a><a class="pill" href="#exp-6" data-nav="6">06</a><a class="pill" href="#exp-7" data-nav="7">07</a><a class="pill" href="#exp-8" data-nav="8">08</a><a class="pill" href="#exp-9" data-nav="9">09</a><a class="pill" href="#exp-10" data-nav="10">10</a>
-      </div>
-      <a class="go" href="#planes">Ver planes →</a>
-    </nav>
-
-    <div class="cards">
-      <article class="card" id="exp-1" data-exp="1">
-        <div class="card-media"><img src="habitat_gallery/piscina.webp" alt="Huéspedes disfrutando la piscina de Hábitat" loading="lazy"><div class="num">01<small>de 10</small></div></div>
-        <div class="card-body">
-          <span class="eyebrow">Piscina</span>
-          <h3>Mañanas de piscina climatizada, a tu ritmo</h3>
-          <p class="txt">Nadar, flotar o hacer <strong>aquagym</strong> en una piscina climatizada pensada para el adulto mayor, rodeada de jardines y con acompañamiento del equipo durante cada actividad.</p>
-          <div class="plus"><b>Lo que hace la diferencia</b><span>Accesos seguros, temperatura agradable todo el año y personal pendiente mientras disfrutas.</span></div>
-          <div class="card-foot"><a class="next" href="#exp-2">Experiencia 02 ↓</a><a class="btn btn-verde" href="#reservar" data-plan="">Quiero vivirlo</a></div>
-        </div>
-      </article>
-
-      <article class="card flip" id="exp-2" data-exp="2">
-        <div class="card-media"><img src="habitat_gallery/Gym.webp" alt="Huésped entrenando en el gimnasio con acompañamiento" loading="lazy"><div class="num">02<small>de 10</small></div></div>
-        <div class="card-body">
-          <span class="eyebrow">Gimnasio</span>
-          <h3>Gimnasio adaptado con acompañamiento de fisioterapia</h3>
-          <p class="txt">Máquinas y rutinas adaptadas para mantener la movilidad, la fuerza y el equilibrio. Cada huésped entrena con el <strong>acompañamiento de nuestro equipo de fisioterapia</strong>, sin presión y con objetivos reales.</p>
-          <div class="plus"><b>Lo que hace la diferencia</b><span>Vuelves a casa sintiéndote más fuerte, no solo descansado.</span></div>
-          <div class="card-foot"><a class="next" href="#exp-3">Experiencia 03 ↓</a><a class="btn btn-verde" href="#reservar">Quiero vivirlo</a></div>
-        </div>
-      </article>
-
-      <article class="card" id="exp-3" data-exp="3">
-        <div class="card-media">
-          <!-- TODO: reemplazar por foto real de la sala de cine cuando esté disponible -->
-          <div class="cine" role="img" aria-label="Ilustración de una sala de cine">
-            <div class="cine-screen">Función de las 4:00 p. m.</div>
-            <div class="cine-seats"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-            <small>Sala de cine Hábitat</small>
-          </div>
-          <div class="num">03<small>de 10</small></div>
-        </div>
-        <div class="card-body">
-          <span class="eyebrow">Cine</span>
-          <h3>Tardes de cine, clásicos y estrenos con amigos</h3>
-          <p class="txt">Una sala de cine para disfrutar <strong>películas, musicales y conciertos</strong> en compañía. Un plan para reír, recordar y comentar la función con los nuevos amigos del club.</p>
-          <div class="plus"><b>Lo que hace la diferencia</b><span>Programación pensada para los gustos de nuestros huéspedes, con crispetas incluidas.</span></div>
-          <div class="card-foot"><a class="next" href="#exp-4">Experiencia 04 ↓</a><a class="btn btn-verde" href="#reservar">Quiero vivirlo</a></div>
-        </div>
-      </article>
-
-      <article class="card flip" id="exp-4" data-exp="4">
-        <div class="card-media"><img src="habitat_gallery/cc_jardines.webp" alt="Pareja de adultos mayores caminando por los senderos de Hábitat" loading="lazy"><div class="num">04<small>de 10</small></div></div>
-        <div class="card-body">
-          <span class="eyebrow">Naturaleza</span>
-          <h3>Jardines, senderos y aire puro en el sur del Valle de Aburrá</h3>
-          <p class="txt">Caminatas suaves entre árboles, terrazas soleadas y rincones para leer o conversar. Un entorno campestre que invita a <strong>bajar el ritmo</strong> sin alejarse de la ciudad.</p>
-          <div class="plus"><b>Lo que hace la diferencia</b><span>Senderos accesibles y seguros para caminar con tranquilidad todos los días.</span></div>
-          <div class="card-foot"><a class="next" href="#exp-5">Experiencia 05 ↓</a><a class="btn btn-verde" href="#reservar">Quiero vivirlo</a></div>
-        </div>
-      </article>
-
-      <article class="card" id="exp-5" data-exp="5">
-        <div class="card-media"><img src="habitat_gallery/_LEU4760.webp" alt="Comedor de Hábitat con luz natural" loading="lazy"><div class="num">05<small>de 10</small></div></div>
-        <div class="card-body">
-          <span class="eyebrow">Gastronomía</span>
-          <h3>Cinco momentos de comida casera al día, ajustados a cada huésped</h3>
-          <p class="txt">Desayuno, almuerzo, comida y dos refrigerios servidos en comedores llenos de luz. El menú se adapta a las <strong>necesidades nutricionales y médicas</strong> de cada persona: dietas hiposódicas, para diabéticos o texturas modificadas.</p>
-          <div class="plus"><b>Lo que hace la diferencia</b><span>Sabor de casa con el respaldo de nuestro equipo de nutrición.</span></div>
-          <div class="card-foot"><a class="next" href="#exp-6">Experiencia 06 ↓</a><a class="btn btn-verde" href="#reservar">Quiero vivirlo</a></div>
-        </div>
-      </article>
-
-      <div class="pause">
-        <span class="chip">Ya conoces 5 de las 10 experiencias</span>
-        <h3>¿Quieres saber qué plan le queda mejor a tu familia <em>mientras sigues leyendo</em>?</h3>
-        <p>Compara la semana, los 15 días y el mes completo, o déjanos tus datos y una asesora te contará disponibilidad y fechas.</p>
-        <div class="row"><a class="btn btn-arena" href="#planes">Ver los planes</a><a class="btn btn-ghost" href="#exp-6">Seguir con la experiencia 06</a></div>
-      </div>
-
-      <article class="card flip" id="exp-6" data-exp="6">
-        <div class="card-media"><img src="habitat_gallery/Juegos.webp" alt="Huésped jugando billar" loading="lazy"><div class="num">06<small>de 10</small></div></div>
-        <div class="card-body">
-          <span class="eyebrow">Juegos y vida social</span>
-          <h3>Billar, juegos de mesa y tertulias que se vuelven amistades</h3>
-          <p class="txt">Salones de juegos, <strong>billar</strong>, cartas, bingo y celebraciones. En Hábitat Country Club siempre hay alguien con quien compartir un café y una buena conversación.</p>
-          <div class="plus"><b>Lo que hace la diferencia</b><span>La compañía combate la soledad y le devuelve la energía a la rutina.</span></div>
-          <div class="card-foot"><a class="next" href="#exp-7">Experiencia 07 ↓</a><a class="btn btn-verde" href="#reservar">Quiero vivirlo</a></div>
-        </div>
-      </article>
-
-      <article class="card" id="exp-7" data-exp="7">
-        <div class="card-media"><img src="habitat_gallery/LEU2673-1.webp" alt="Huésped pintando en un taller de arte" loading="lazy"><div class="num">07<small>de 10</small></div></div>
-        <div class="card-body">
-          <span class="eyebrow">Talleres</span>
-          <h3>Talleres de arte, música y estimulación cognitiva</h3>
-          <p class="txt">Pintura, manualidades, música y juegos de memoria guiados por profesionales. Actividades diarias que mantienen la mente activa y <strong>sacan talentos</strong> que muchos no sabían que tenían.</p>
-          <div class="plus"><b>Lo que hace la diferencia</b><span>Programación diaria con acompañamiento de neuropsicología.</span></div>
-          <div class="card-foot"><a class="next" href="#exp-8">Experiencia 08 ↓</a><a class="btn btn-verde" href="#reservar">Quiero vivirlo</a></div>
-        </div>
-      </article>
-
-      <article class="card flip" id="exp-8" data-exp="8">
-        <div class="card-media"><img src="habitat_gallery/peluqueria.webp" alt="Huésped en la peluquería de Hábitat" loading="lazy"><div class="num">08<small>de 10</small></div></div>
-        <div class="card-body">
-          <span class="eyebrow">Cuidado personal</span>
-          <h3>Peluquería y cuidado personal para verse y sentirse bien</h3>
-          <p class="txt">Corte, cepillado y arreglo personal dentro de la misma sede. Porque unas buenas vacaciones también se notan en el espejo y en la <strong>autoestima</strong>.</p>
-          <div class="plus"><b>Lo que hace la diferencia</b><span>Sin desplazamientos ni filas: el bienestar está a unos pasos de la habitación.</span></div>
-          <div class="card-foot"><a class="next" href="#exp-9">Experiencia 09 ↓</a><a class="btn btn-verde" href="#reservar">Quiero vivirlo</a></div>
-        </div>
-      </article>
-
-      <article class="card" id="exp-9" data-exp="9">
-        <div class="card-media"><img src="hero_slides/idea_1_opt.webp" alt="Huésped en su espacio privado tipo apartamento" loading="lazy"><div class="num">09<small>de 10</small></div></div>
-        <div class="card-body">
-          <span class="eyebrow">Descanso</span>
-          <h3>Espacios privados con el confort de un hotel boutique</h3>
-          <p class="txt">Habitaciones cómodas, luminosas y accesibles, con limpieza y lavandería incluidas. Un lugar propio para descansar entre una actividad y otra, con <strong>total privacidad</strong>.</p>
-          <div class="plus"><b>Lo que hace la diferencia</b><span>Puedes traer tus objetos favoritos para sentirte en casa desde el primer día.</span></div>
-          <div class="card-foot"><a class="next" href="#exp-10">Experiencia 10 ↓</a><a class="btn btn-verde" href="#reservar">Quiero vivirlo</a></div>
-        </div>
-      </article>
-
-      <article class="card flip" id="exp-10" data-exp="10">
-        <div class="card-media"><img src="habitat_gallery/_MER0311.webp" alt="Enfermera de Hábitat acompañando a una huésped" loading="lazy"><div class="num">10<small>de 10</small></div></div>
-        <div class="card-body">
-          <span class="eyebrow">Tranquilidad total</span>
-          <h3>Respaldo médico y asistencial 24/7 durante toda tu estadía</h3>
-          <p class="txt">Mientras disfrutas, <strong>enfermería y asistencia te acompañan día y noche</strong>, con control de medicamentos y el apoyo programado de profesionales en medicina, fisioterapia, nutrición, neuropsicología y trabajo social en la jornada diurna.</p>
-          <div class="plus"><b>Lo que hace la diferencia</b><span>18 años de experiencia cuidando adultos mayores. Tu familia descansa tanto como tú.</span></div>
-          <div class="card-foot"><a class="next" href="#planes">Ver los planes ↓</a><a class="btn btn-verde" href="#reservar">Reservar mis vacaciones</a></div>
-        </div>
-      </article>
-    </div>
-  </div>
+        <section class="video-section">
+            <div class="video-container-wrapper">
+                <div class="video-column">
+                    <div class="video-box">
+                        <img src="habitat_gallery/20260210-DEV-GOOGLE-IMAGE-ADS-ENTORNODETALLES idea 1.webp" alt="Compañía y cuidado" class="video-thumb">
+                    </div>
+                </div>
+                
+                <div class="video-text">
+                    <h2 class="section-title" style="margin-bottom: 0.8rem;">Siéntete en casa</h2>
+                    <p style="font-size: 1.3rem; color: var(--text-dark); margin: 0 0 1.5rem 0; font-family: var(--font-body); line-height: 1.5;">Vive con todas tus pertenencias y comodidades a tu medida</p>
+                    
+                    <button class="cta-btn" style="margin-top: 1rem;" onclick="openFormModal()">SOLICITA INFORMACIÓN</button>
+                </div>
+            </div>
+        </section>
+        <section class="video-section">
+            <div class="video-container-wrapper row-reverse">
+                <div class="video-column">
+                    <div class="video-box" style="box-shadow: 0 20px 40px rgba(0,0,0,0.15);">
+                        <img src="habitat_gallery/gemini_opt.webp" alt="Vive en tu propia casa" class="video-thumb" style="object-position: bottom;">
+                    </div>
+                </div>
+                
+                <div class="video-text">
+                    <h2 class="section-title" style="margin-bottom: 0.8rem;">Disfruta de tu propio club</h2>
+                    <p style="font-size: 1.3rem; color: var(--text-dark); margin: 0 0 1.5rem 0; font-family: var(--font-body); line-height: 1.5;">rodeado de naturaleza y espacios abiertos</p>
+                    <button class="cta-btn" style="margin-top: 1rem;" onclick="openFormModal()">SOLICITA INFORMACIÓN</button>
+                </div>
+            </div>
+        </section>
+        <section class="video-section">
+            <div class="video-container-wrapper">
+                <div class="video-column">
+                    <div class="video-box">
+                        <img src="habitat_gallery/20260210-DEV-GOOGLE-IMAGE-ADS-ENTORNODETALLES idea 6.webp" alt="Atención y cuidado" class="video-thumb">
+                    </div>
+                </div>
+                
+                <div class="video-text">
+                    <h2 class="section-title" style="margin-bottom: 0.8rem;">Siéntete siempre en compañía</h2>
+                    <p style="font-size: 1.3rem; color: var(--text-dark); margin: 0 0 1.5rem 0; font-family: var(--font-body); line-height: 1.5;">Con la seguridad de un equipo profesional 24/7</p>
+                    <button class="cta-btn" style="margin-top: 1rem;" onclick="openFormModal()">SOLICITA INFORMACIÓN</button>
+                </div>
+            </div>
+        </section>
+</section>
 </section>
 
-<!-- PLANES -->
-<section class="planes" id="planes">
-  <div class="wrap">
-    <div class="head">
-      <span class="eyebrow">Planes vacacionales</span>
-      <h2>Elige cuánto tiempo quieres <em>vivir el club</em></h2>
-      <p>Tres planes con todo incluido: alojamiento, alimentación, actividades y cuidado profesional 24/7.</p>
-    </div>
+        <section class="testimonials-section">
+            <div class="services-header">
+                <h2 class="services-main-title">Lo que dicen nuestras familias y residentes</h2>
+                <div class="title-divider"></div>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="video-box" style="border-radius: 16px; cursor: pointer;" data-youtube-id="AoL9prIR5Qg" onclick="openVideoModal(this.dataset.youtubeId)">
+                        <img src="sonia_preview.jpg" alt="Testimonio de Residente" class="video-thumb">
+                        <div class="video-overlay"></div>
+                        <button class="play-btn" style="width: 60px; height: 60px;">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px;">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="testimonial-info">
+                        <p class="testimonial-quote">"Ha sido una experiencia maravillosa, ha llenado todas las expectativas y nos encontramos muy felices con el nivel profesional y humano"</p>
+                        <h4 class="testimonial-name">Sonia Gómez, Residente</h4>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="video-box" style="border-radius: 16px; cursor: pointer;" data-youtube-id="H7h-_pQNr-I" onclick="openVideoModal(this.dataset.youtubeId)">
+                        <img src="https://img.youtube.com/vi/H7h-_pQNr-I/maxresdefault.jpg" alt="Testimonio de Familiar" class="video-thumb">
+                        <div class="video-overlay"></div>
+                        <button class="play-btn" style="width: 60px; height: 60px;">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px;">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="testimonial-info">
+                        <p class="testimonial-quote">"Amo todo de Hábitat, es una gran comunidad con personas amables, un equipo amigable, se lo recomiendo a todos mis amigos y personas que conozco"</p>
+                        <h4 class="testimonial-name">Alcira Trujillo, Residente</h4>
+                    </div>
+                </div>
+                
 
-    <div class="plan-grid">
-      <article class="plan" data-plan-card="semana">
-        <span class="plan-name">Escapada</span>
-        <div class="plan-dur">1 semana</div>
-        <p class="plan-desc">7 noches para conocer el club, descansar y probar la experiencia Hábitat.</p>
-        <div class="price"><small>Valor del plan</small><b data-price="semana">Precio por confirmar</b><span class="usd" data-usd="semana"></span></div>
-        <ul class="feat">
-          <li>Alojamiento en habitación privada</li>
-          <li>5 momentos de alimentación al día</li>
-          <li>Acceso a piscina, gimnasio, cine y zonas sociales</li>
-          <li>Agenda diaria de actividades</li>
-          <li>Enfermería y asistencia 24/7</li>
-        </ul>
-        <a class="btn btn-verde" href="#reservar" data-plan="1 semana">Reservar 1 semana</a>
-      </article>
+            </div>
+        </section>
 
-      <article class="plan star" data-plan-card="quincena">
-        <span class="ribbon">El más elegido</span>
-        <span class="plan-name">Temporada</span>
-        <div class="plan-dur">15 días</div>
-        <p class="plan-desc">El tiempo justo para crear rutina, hacer amigos y sentir los beneficios.</p>
-        <div class="price"><small>Valor del plan</small><b data-price="quincena">Precio por confirmar</b><span class="usd" data-usd="quincena"></span></div>
-        <ul class="feat">
-          <li>Todo lo del plan de 1 semana</li>
-          <li class="extra">Valoración inicial de fisioterapia</li>
-          <li class="extra">Rutina de gimnasio y piscina personalizada</li>
-          <li>Peluquería incluida una vez</li>
-          <li>Enfermería y asistencia 24/7</li>
-        </ul>
-        <a class="btn btn-arena" href="#reservar" data-plan="15 días">Reservar 15 días</a>
-      </article>
+        
 
-      <article class="plan" data-plan-card="mes">
-        <span class="plan-name">Vida de club</span>
-        <div class="plan-dur">1 mes</div>
-        <p class="plan-desc">Un mes completo para vivir Hábitat como un residente más, sin compromiso de permanencia.</p>
-        <div class="price"><small>Valor del plan</small><b data-price="mes">Precio por confirmar</b><span class="usd" data-usd="mes"></span></div>
-        <ul class="feat">
-          <li>Todo lo del plan de 15 días</li>
-          <li class="extra">Seguimiento del equipo interdisciplinario</li>
-          <li class="extra">Informe de bienestar para la familia al finalizar</li>
-          <li>Peluquería incluida dos veces</li>
-          <li>Enfermería y asistencia 24/7</li>
-        </ul>
-        <a class="btn btn-verde" href="#reservar" data-plan="1 mes">Reservar 1 mes</a>
-      </article>
-    </div>
+        
+        <section class="contact-banner" style="text-align: center; padding: 2rem 2rem 6rem; background-color: var(--bg-light);">
+            <h2 style="font-size: 3.5rem; color: var(--primary-color); margin-bottom: 2rem; font-family: var(--font-heading); font-weight: 700;">+57 320 687 2012</h2>
+            <a href="https://wa.me/573206872012?text=Hola%2C%20quisiera%20saber%20m%C3%A1s%20de%20los%20planes%20residenciales%20de%20H%C3%A1bitat%20Suram%C3%A9rica" target="_blank" class="wa-testimonial-btn" style="display: inline-flex; margin: 0 auto; text-decoration: none;">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.66-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+                </svg>
+                CONTÁCTANOS POR WHATSAPP
+            </a>
+        </section>
 
-    <div class="incluye">
-      <h3>Todos los planes incluyen</h3>
-      <ul>
-        <li>Enfermería y asistencia día y noche</li>
-        <li>Control y administración de medicamentos</li>
-        <li>Alimentación ajustada a cada huésped</li>
-        <li>Limpieza y lavandería</li>
-        <li>Piscina, gimnasio, cine y jardines</li>
-        <li>Visitas de la familia</li>
-      </ul>
-    </div>
-    <p class="fine">Cupos sujetos a disponibilidad. Antes del ingreso hacemos una valoración para asegurar que el plan se ajusta a cada huésped.</p>
-  </div>
-</section>
+        
+        <section class="map-section" style="padding: 2rem 2rem 6rem; background-color: var(--bg-light); text-align: center;">
+            <h2 class="section-title" style="margin-bottom: 3rem; text-align: center;">Visita nuestra sede campestre</h2>
+            <div class="map-container" style="max-width: 1200px; margin: 0 auto; height: 450px; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.1);">
+                <iframe 
+                    src="https://maps.google.com/maps?q=Hábitat%20Adulto%20Mayor%20(Sede%20Suramérica)&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
 
-<!-- COMPARATIVA -->
-<section class="comp">
-  <div class="wrap">
-    <div class="head">
-      <span class="eyebrow">Compara antes de decidir</span>
-      <h2>Unas vacaciones en Hábitat Country Club <em>frente a otras opciones</em></h2>
-    </div>
-    <div class="table-box">
-      <table>
-        <thead><tr><th>Lo que importa</th><th class="us">Hábitat Country Club</th><th>Hotel convencional</th><th>Quedarse en casa</th></tr></thead>
-        <tbody>
-          <tr><td>Enfermería y asistencia día y noche</td><td class="us">✓ 24/7 incluida</td><td class="them">No disponible</td><td class="them">Depende de la familia</td></tr>
-          <tr><td>Alimentación ajustada a dieta médica</td><td class="us">✓ Plan personalizado</td><td class="them">Menú general</td><td class="them">Depende de la familia</td></tr>
-          <tr><td>Espacios adaptados y accesibles</td><td class="us">✓ Diseñados para el adulto mayor</td><td class="them">Parcial</td><td class="them">Pocas veces</td></tr>
-          <tr><td>Piscina, gimnasio y cine con acompañamiento</td><td class="us">✓ Con profesionales</td><td class="them">Sin acompañamiento</td><td class="them">No</td></tr>
-          <tr><td>Actividades y vida social diaria</td><td class="us">✓ Agenda todos los días</td><td class="them">Ocasional</td><td class="them">Limitada</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
+        <section class="gallery-section">
+            <div class="gallery-header">
+                <h2 class="gallery-title">Nuestros espacios para la vida</h2>
+                <div class="title-divider"></div>
+            </div>
+            <div class="gallery-grid">
+                <img src="habitat_gallery/_LEU4760.webp" alt="Instalaciones Hábitat Suramérica" class="gallery-item" loading="lazy">
+                <img src="habitat_gallery/20260210-DEV-GOOGLE-IMAGE-ADS-ENTORNODETALLES idea 1.webp" alt="Instalaciones Hábitat Suramérica" class="gallery-item" loading="lazy">
+                <img src="habitat_gallery/20260210-DEV-GOOGLE-IMAGE-ADS-ENTORNODETALLES idea 3.webp" alt="Instalaciones Hábitat Suramérica" class="gallery-item" loading="lazy">
+                <img src="habitat_gallery/20260210-DEV-GOOGLE-IMAGE-ADS-ENTORNODETALLES idea 6.webp" alt="Instalaciones Hábitat Suramérica" class="gallery-item" loading="lazy">
+                <img src="habitat_gallery/20260210-DEV-GOOGLE-IMAGE-ADS-ENTORNODETALLES idea 8.webp" alt="Instalaciones Hábitat Suramérica" class="gallery-item" loading="lazy">
+                <img src="habitat_gallery/comedor.webp" alt="Instalaciones Hábitat Suramérica" class="gallery-item" loading="lazy">
+                <img src="habitat_gallery/espacios.webp" alt="Instalaciones Hábitat Suramérica" class="gallery-item" loading="lazy">
+                <img src="habitat_gallery/Gym.webp" alt="Instalaciones Hábitat Suramérica" class="gallery-item" loading="lazy">
+                <img src="habitat_gallery/Juegos.webp" alt="Instalaciones Hábitat Suramérica" class="gallery-item" loading="lazy">
+                <img src="habitat_gallery/LEU2673-1.webp" alt="Instalaciones Hábitat Suramérica" class="gallery-item" loading="lazy">
+                <img src="habitat_gallery/peluqueria.webp" alt="Instalaciones Hábitat Suramérica" class="gallery-item" loading="lazy">
+                <img src="habitat_gallery/piscina.webp" alt="Instalaciones Hábitat Suramérica" class="gallery-item" loading="lazy">
+                <img src="habitat_gallery/gemini_opt.webp" alt="Instalaciones Hábitat Suramérica" class="gallery-item" loading="lazy">
+                <img src="habitat_gallery/_MER0311.webp" alt="Instalaciones Hábitat Suramérica" class="gallery-item" loading="lazy">
+                <img src="habitat_gallery/_MER0361.webp" alt="Instalaciones Hábitat Suramérica" class="gallery-item" loading="lazy">
+                <img src="habitat_gallery/_MER0657.webp" alt="Instalaciones Hábitat Suramérica" class="gallery-item" loading="lazy">
+            </div>
+        </section>
 
-<!-- FORMULARIO -->
-<section class="form-sec" id="reservar">
-  <div class="wrap">
-    <div class="form-copy">
-      <span class="eyebrow">Reserva tus vacaciones</span>
-      <h2>El bienestar se <em>vive</em>, también en vacaciones.</h2>
-      <p>Déjanos tus datos y una asesora de Hábitat te contactará para confirmar fechas, disponibilidad y el valor del plan que elegiste.</p>
-      <ol class="steps">
-        <li><b>1</b><span>Eliges el plan y la fecha aproximada de llegada.</span></li>
-        <li><b>2</b><span>Hablamos contigo y hacemos una breve valoración del huésped.</span></li>
-        <li><b>3</b><span>Llega al club y empieza a disfrutar, con tu familia tranquila.</span></li>
-      </ol>
-    </div>
-    <div class="form-card">
-      <h3>Reserva tu plan</h3>
-      <p>Te respondemos en horario de atención. Si prefieres, escríbenos por WhatsApp.</p>
-      <form id="cc-form" class="fields" action="gracias.html" novalidate>
-        <div>
-          <span class="l" style="display:block;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--verde);margin-bottom:.45rem">Plan de interés</span>
-          <div class="plan-pick" role="radiogroup" aria-label="Plan de interés">
-            <input type="radio" name="plan" id="pp-semana" value="1 semana"><label for="pp-semana"><b>1 semana</b><small>Escapada</small></label>
-            <input type="radio" name="plan" id="pp-quincena" value="15 días" checked><label for="pp-quincena"><b>15 días</b><small>Temporada</small></label>
-            <input type="radio" name="plan" id="pp-mes" value="1 mes"><label for="pp-mes"><b>1 mes</b><small>Vida de club</small></label>
-          </div>
+        
+        <section class="plan-section" style="padding: 5rem 1rem; background-color: #fcfcfc;">
+            <div class="services-header" style="text-align: center; margin-bottom: 3rem;">
+                <h2 class="services-main-title" style="color: #2c3e2d; font-family: 'Playfair Display', serif; font-size: 2.2rem;">Qué incluye nuestro plan de residencia asistida</h2>
+                <div class="title-divider" style="margin: 1rem auto; width: 60px; height: 3px; background-color: #D3DB36;"></div>
+            </div>
+            
+            <div class="plan-grid" style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <!-- Column 1 -->
+                <div class="plan-card" style="background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+                    <h3 style="color: #2c3e2d; font-family: 'Playfair Display', serif; font-size: 1.8rem; font-style: italic; margin-bottom: 2rem; font-weight: 600;">Equipo Profesional</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.2rem;">
+                        <li style="display: flex; gap: 10px; color: #555; font-size: 0.95rem; align-items: flex-start;"><svg style="color: #2c3e2d; flex-shrink: 0; margin-top: 2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Médico general</li>
+                        <li style="display: flex; gap: 10px; color: #555; font-size: 0.95rem; align-items: flex-start;"><svg style="color: #2c3e2d; flex-shrink: 0; margin-top: 2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Jefe de enfermería</li>
+                        <li style="display: flex; gap: 10px; color: #555; font-size: 0.95rem; align-items: flex-start;"><svg style="color: #2c3e2d; flex-shrink: 0; margin-top: 2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Psicología</li>
+                        <li style="display: flex; gap: 10px; color: #555; font-size: 0.95rem; align-items: flex-start;"><svg style="color: #2c3e2d; flex-shrink: 0; margin-top: 2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Gerontología</li>
+                        
+                        <li style="display: flex; gap: 10px; color: #555; font-size: 0.95rem; align-items: flex-start;"><svg style="color: #2c3e2d; flex-shrink: 0; margin-top: 2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Acondicionadores físicos</li>
+                        <li style="display: flex; gap: 10px; color: #555; font-size: 0.95rem; align-items: flex-start;"><svg style="color: #2c3e2d; flex-shrink: 0; margin-top: 2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Ingeniería de alimentos</li>
+                        <li style="display: flex; gap: 10px; color: #555; font-size: 0.95rem; align-items: flex-start;"><svg style="color: #2c3e2d; flex-shrink: 0; margin-top: 2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Regencia de farmacia</li>
+                        <li style="display: flex; gap: 10px; color: #555; font-size: 0.95rem; align-items: flex-start;"><svg style="color: #2c3e2d; flex-shrink: 0; margin-top: 2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Secretaria asistente (Trámites EPS)</li>
+                    </ul>
+                </div>
+                
+                <!-- Column 2 -->
+                <div class="plan-card" style="background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+                    <h3 style="color: #2c3e2d; font-family: 'Playfair Display', serif; font-size: 1.8rem; font-style: italic; margin-bottom: 2rem; font-weight: 600;">Otros Servicios</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.2rem;">
+                        <li style="display: flex; gap: 10px; color: #555; font-size: 0.95rem; align-items: flex-start;"><svg style="color: #2c3e2d; flex-shrink: 0; margin-top: 2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Servicio de enfermería las 24 horas</li>
+                        <li style="display: flex; gap: 10px; color: #555; font-size: 0.95rem; align-items: flex-start;"><svg style="color: #2c3e2d; flex-shrink: 0; margin-top: 2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Liderado por jefe de enfermería</li>
+                        <li style="display: flex; gap: 10px; color: #555; font-size: 0.95rem; align-items: flex-start;"><svg style="color: #2c3e2d; flex-shrink: 0; margin-top: 2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Residencia acondicionada para el adulto mayor</li>
+                        <li style="display: flex; gap: 10px; color: #555; font-size: 0.95rem; align-items: flex-start;"><svg style="color: #2c3e2d; flex-shrink: 0; margin-top: 2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Lavado y planchado de ropa</li>
+                        <li style="display: flex; gap: 10px; color: #555; font-size: 0.95rem; align-items: flex-start;"><svg style="color: #2c3e2d; flex-shrink: 0; margin-top: 2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Aseo diario de la habitación</li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div class="plan-card" style="background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+                    <h3 style="color: #2c3e2d; font-family: 'Playfair Display', serif; font-size: 1.8rem; font-style: italic; margin-bottom: 2rem; font-weight: 600;">Actividades de Bienestar</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.2rem;">
+                        <li style="display: flex; gap: 10px; color: #555; font-size: 0.95rem; align-items: flex-start;"><svg style="color: #2c3e2d; flex-shrink: 0; margin-top: 2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Actividad física grupal diaria</li>
+                        <li style="display: flex; gap: 10px; color: #555; font-size: 0.95rem; align-items: flex-start;"><svg style="color: #2c3e2d; flex-shrink: 0; margin-top: 2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Acompañamiento religioso (2x semana)</li>
+                        <li style="display: flex; gap: 10px; color: #555; font-size: 0.95rem; align-items: flex-start;"><svg style="color: #2c3e2d; flex-shrink: 0; margin-top: 2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Hidrogimnasia</li>
+                        <li style="display: flex; gap: 10px; color: #555; font-size: 0.95rem; align-items: flex-start;"><svg style="color: #2c3e2d; flex-shrink: 0; margin-top: 2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Juegos de mesa y música en vivo</li>
+                        <li style="display: flex; gap: 10px; color: #555; font-size: 0.95rem; align-items: flex-start;"><svg style="color: #2c3e2d; flex-shrink: 0; margin-top: 2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Paseos, caminatas y yoga</li>
+                        <li style="display: flex; gap: 10px; color: #555; font-size: 0.95rem; align-items: flex-start;"><svg style="color: #2c3e2d; flex-shrink: 0; margin-top: 2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Club de lectura y club de inglés</li>
+                        <li style="display: flex; gap: 10px; color: #555; font-size: 0.95rem; align-items: flex-start;"><svg style="color: #2c3e2d; flex-shrink: 0; margin-top: 2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Manualidades y estimulación cognitiva</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="services-header">
+                <h2 class="services-main-title">Preguntas Frecuentes</h2>
+                <div class="title-divider"></div>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Qué tipos de cuidados ofrecen?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ofrecemos cuidados básicos de enfermería, seguimiento de signos vitales, administración de medicamentos, apoyo en actividades básicas de la vida diaria y asistencia especializada según las necesidades de cada residente.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Se permiten visitas de familiares?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>En HÁBITAT SURAMÉRICA no contamos con horarios establecidos para las visitas. Promovemos y valoramos activamente el vínculo familiar, por lo que nuestros residentes pueden recibir a sus familiares y seres queridos de manera flexible, favoreciendo espacios de encuentro y acompañamiento en un ambiente cómodo, seguro y acogedor.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Tienen planes de alimentación especial?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Totalmente. Nuestro equipo de nutrición garantiza las dietas acordes a las condiciones de salud, comorbilidades y requerimientos específicos de cada uno de nuestros residentes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-legal">
+                &copy; 2026 Hábitat Suramérica. Todos los derechos reservados. | <a href="#" onclick="openPolicyModal(event)">Política de tratamiento de datos</a>
+            </div>
         </div>
-        <div><label class="l" for="f-nombre">Nombre completo</label><input type="text" id="f-nombre" name="nombre" required autocomplete="name" placeholder="Ej. Juan Pérez"></div>
-        <div class="two">
-          <div><label class="l" for="f-celular">Celular</label><input type="tel" id="f-celular" name="celular" required autocomplete="tel" placeholder="+57 300 000 0000"></div>
-          <div><label class="l" for="f-email">Correo</label><input type="email" id="f-email" name="email" required autocomplete="email" placeholder="correo@ejemplo.com"></div>
+    </footer>
+
+
+    <!-- Floating Action Button -->
+    <div class="fab-container">
+        <button class="fab-btn" onclick="openFormModal()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            AGENDA TU VISITA
+        </button>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content video-modal-content">
+            <span class="close-modal" id="close-video-modal">&times;</span>
+            <div class="video-iframe-container">
+                <iframe id="youtube-iframe" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
         </div>
-        <div class="two">
-          <div><label class="l" for="f-para">¿Para quién?</label>
-            <select id="f-para" name="para_quien" required>
-              <option value="" disabled selected>Selecciona</option>
-              <option value="Para un familiar">Para un familiar</option>
-              <option value="Para mí">Para mí</option>
-              <option value="Para una pareja">Para una pareja</option>
-            </select></div>
-          <div><label class="l" for="f-cuando">¿Cuándo?</label>
-            <select id="f-cuando" name="cuando" required>
-              <option value="" disabled selected>Selecciona</option>
-              <option value="Este mes">Este mes</option>
-              <option value="El próximo mes">El próximo mes</option>
-              <option value="Temporada de fin de año">Temporada de fin de año</option>
-              <option value="Aún no tengo fecha">Aún no tengo fecha</option>
-            </select></div>
+    </div>
+
+    <!-- Form Modal -->
+    <div id="form-modal" class="modal">
+        <div class="modal-content" style="max-width: 500px; padding: 2rem; max-height: 90vh; overflow-y: auto;">
+            <span class="close-modal" id="close-form-modal">&times;</span>
+            <div class="form-card" style="box-shadow: none; padding: 0; background: transparent;">
+                <h2 class="form-subtitle">Agenda tu visita hoy<br><span class="highlight-ochre">Residencias disponibles</span></h2>
+                
+                <form id="popup-contact-form" class="lead-form">
+                    <div class="form-group">
+                        <label for="nombre-popup">Nombre completo</label>
+                        <input type="text" id="nombre-popup" name="nombre" required placeholder="Ej. Juan Pérez">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="celular-popup">Celular</label>
+                            <input type="tel" id="celular-popup" name="celular" required placeholder="Ej. 300 123 4567">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email-popup">Email</label>
+                            <input type="email" id="email-popup" name="email" required placeholder="correo@ejemplo.com">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="para_quien-popup">¿Para quién busca la residencia?</label>
+                        <select id="para_quien-popup" name="para_quien" required>
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="Familiar">Familiar</option>
+                            <option value="Para mi">Para mí</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cuando-popup">¿Cuándo deseas tomar el servicio?</label>
+                        <select id="cuando-popup" name="cuando" required>
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="En los próximos 30 días">En los próximos 30 días</option>
+                            <option value="En los próximos 3 meses">En los próximos 3 meses</option>
+                            <option value="Después de los próximos 3 meses">Después de los próximos 3 meses</option>
+                        </select>
+                    </div>
+                    
+
+                    <div class="form-group">
+                        <label for="servicio-popup">¿Cuál de nuestros servicios te interesa?</label>
+                        <div class="services-checkbox-group" style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                            <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                <input type="checkbox" id="srv-residencia-popup" name="servicio[]" value="Servicio de Residencia">
+                                <label for="srv-residencia-popup" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Servicio de Residencia</label>
+                            </div>
+                            <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                <input type="checkbox" id="srv-temporal-popup" name="servicio[]" value="Alojamiento Temporal">
+                                <label for="srv-temporal-popup" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Alojamiento Temporal</label>
+                            </div>
+                            <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                <input type="checkbox" id="srv-recuperacion-popup" name="servicio[]" value="Recuperación Poshospitalaria">
+                                <label for="srv-recuperacion-popup" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Recuperación Poshospitalaria</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="margin: 1.5rem 0; border: none; border-top: 1px solid #c8d4c1;">
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="politica-popup" name="politica" required>
+                        <label for="politica-popup">Acepto la <a href="politica.html" target="_blank">política de tratamiento de datos</a></label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span>AGENDAR UNA VISITA</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
-        <div class="check"><input type="checkbox" id="f-datos" name="politica" required><label for="f-datos">Acepto la <a href="politica.html" target="_blank" rel="noopener">política de tratamiento de datos</a></label></div>
-        <div class="form-msg" id="form-msg" hidden></div>
-        <button type="submit" class="btn btn-verde">Quiero reservar</button>
-      </form>
-      <p class="call">¿Prefieres hablar ahora? Llámanos o escríbenos: <a href="tel:+573206872012">+57 320 687 2012</a></p>
     </div>
-  </div>
-</section>
 
-<!-- FAQ -->
-<section class="faq">
-  <div class="wrap">
-    <div class="head">
-      <span class="eyebrow">Preguntas frecuentes</span>
-      <h2>Lo que las familias nos preguntan</h2>
-    </div>
-    <div class="faq-list">
-      <details><summary>¿Quién puede tomar un plan vacacional?</summary><p>Adultos mayores que quieran descansar, compartir y disfrutar de las instalaciones. Antes del ingreso hacemos una valoración para confirmar que el plan y el acompañamiento se ajustan a sus necesidades.</p></details>
-      <details><summary>¿La familia puede visitar durante la estadía?</summary><p>Sí. Las visitas son bienvenidas y nuestra asesora te contará los horarios al confirmar la reserva.</p></details>
-      <details><summary>¿Qué pasa con los medicamentos y las citas médicas?</summary><p>Nuestro equipo de enfermería administra los medicamentos según la fórmula médica del huésped y está disponible las 24 horas para cualquier necesidad.</p></details>
-      <details><summary>¿Puedo extender las vacaciones o quedarme a vivir?</summary><p>Sí. Muchas familias usan el plan vacacional para conocer Hábitat antes de tomar una decisión. Si quieres extender la estadía, te ayudamos a encontrar el plan adecuado.</p></details>
-      <details><summary>¿Qué debo llevar?</summary><p>Ropa cómoda, traje de baño, objetos personales y la fórmula médica vigente. Al confirmar tu reserva te enviamos la lista completa.</p></details>
-    </div>
-  </div>
-</section>
+    <script src="main.js?v=4"></script>
 
-<!-- TESTIMONIOS -->
-<section class="testi">
-  <div class="wrap">
-    <div class="head">
-      <span class="eyebrow">Testimonios reales</span>
-      <h2>Así se vive Hábitat</h2>
-    </div>
-    <div class="vids">
-      <div class="vid"><div class="vid-frame"><!-- VIDEO:H7h-_pQNr-I --><iframe src="https://www.youtube-nocookie.com/embed/H7h-_pQNr-I?rel=0&amp;modestbranding=1" title="Testimonio Alcira Trujillo" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><!-- /VIDEO --></div><h3>Alcira Trujillo</h3><p>Nos cuenta su día a día en Hábitat</p></div>
-      <div class="vid"><div class="vid-frame"><!-- VIDEO:rew9Ih2gI34 --><iframe src="https://www.youtube-nocookie.com/embed/rew9Ih2gI34?rel=0&amp;modestbranding=1" title="Testimonio Cecilia Agudelo" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><!-- /VIDEO --></div><h3>Cecilia Agudelo</h3><p>Así ha sido su vida en Hábitat</p></div>
-      <div class="vid"><div class="vid-frame"><!-- VIDEO:lsk11DeUUYg --><iframe src="https://www.youtube-nocookie.com/embed/lsk11DeUUYg?rel=0&amp;modestbranding=1" title="Testimonio María Norela Rúa" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><!-- /VIDEO --></div><h3>María Norela Rúa</h3><p>Nos comparte su experiencia</p></div>
-    </div>
-  </div>
-</section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("https://open.er-api.com/v6/latest/COP")
+                .then(response => response.json())
+                .then(data => {
+                    const basePriceCOP = 12800000;
+                    const rateUSD = data.rates.USD;
+                    const rateEUR = data.rates.EUR;
+                    
+                    const priceUSD = Math.round(basePriceCOP * rateUSD).toLocaleString('en-US');
+                    const priceEUR = Math.round(basePriceCOP * rateEUR).toLocaleString('de-DE');
+                    
+                    const trmUSD = Math.round(1 / rateUSD).toLocaleString('es-CO');
+                    const trmEUR = Math.round(1 / rateEUR).toLocaleString('es-CO');
 
-<!-- SEDE -->
-<section class="sede">
-  <div class="wrap">
-    <div class="sede-box">
-      <img src="habitat_gallery/espacios.webp" alt="Terraza y jardines de la sede Suramérica" loading="lazy">
-      <div class="sede-info">
-        <span class="eyebrow">Dónde queda el club</span>
-        <h2>Sede Suramérica, La Estrella</h2>
-        <p>Cl. 77 Sur # 50A 290, La Estrella, Antioquia. Un entorno campestre a pocos minutos de Medellín, fácil de visitar para toda la familia.</p>
-        <div class="row">
-          <a class="btn btn-verde" href="#reservar">Reservar mi plan</a>
-          <a class="btn btn-wa" href="https://wa.me/573206872012?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20los%20planes%20vacacionales%20de%20H%C3%A1bitat%20Country%20Club" target="_blank" rel="noopener">WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">© 2026 Hábitat Suramérica. Todos los derechos reservados. | <a href="politica.html">Política de tratamiento de datos</a> | <a href="https://www.supersalud.gov.co/es-co/Paginas/Home.aspx" target="_blank" rel="noopener noreferrer">Vigilado Supersalud</a></div>
-</footer>
-
-<div class="fab" id="fab">
-  <a class="btn btn-arena" href="#reservar">Reservar mi plan</a>
-  <a class="btn btn-wa" href="https://wa.me/573206872012?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20los%20planes%20vacacionales%20de%20H%C3%A1bitat%20Country%20Club" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.42"/></svg>
-  </a>
-</div>
-
-<script>
-/* =========================================================
-   PRECIOS DE LOS PLANES (COP). Cambiar null por el valor,
-   por ejemplo: semana: 3500000
-   Mientras sea null se muestra "Precio por confirmar".
-   ========================================================= */
-const PRECIOS_COP = { semana: null, quincena: null, mes: null };
-
-const LEADS_URL = 'https://script.google.com/macros/s/AKfycbz8MC4A8DD1eemyNkXzTuT6NyLD8c3whbPgtBoraOp1IowfAmbiHRwGTgG25LBBNtcnkA/exec';
-const ES_PRODUCCION = /(^|\.)servicios-habitat\.com$/.test(location.hostname);
-
-(function () {
-  const fmt = n => '$ ' + n.toLocaleString('es-CO');
-  Object.entries(PRECIOS_COP).forEach(([k, v]) => {
-    const el = document.querySelector('[data-price="' + k + '"]');
-    if (!el) return;
-    if (v) { el.textContent = fmt(v) + ' COP'; } else { el.classList.add('tbd'); }
-  });
-  const conPrecio = Object.values(PRECIOS_COP).some(Boolean);
-  if (conPrecio && ES_PRODUCCION) {
-    fetch('https://open.er-api.com/v6/latest/COP').then(r => r.json()).then(d => {
-      const usd = d && d.rates && d.rates.USD; if (!usd) return;
-      Object.entries(PRECIOS_COP).forEach(([k, v]) => {
-        const el = document.querySelector('[data-usd="' + k + '"]');
-        if (el && v) el.textContent = '≈ US$ ' + Math.round(v * usd).toLocaleString('en-US');
-      });
-    }).catch(() => {});
-  }
-})();
-
-/* Botones "Reservar" preseleccionan el plan en el formulario */
-document.querySelectorAll('[data-plan]').forEach(a => {
-  a.addEventListener('click', () => {
-    const p = a.getAttribute('data-plan');
-    if (!p) return;
-    const r = document.querySelector('.plan-pick input[value="' + p + '"]');
-    if (r) r.checked = true;
-  });
-});
-
-/* Recorrido: animación, píldoras y barra de progreso */
-(function () {
-  const cards = Array.from(document.querySelectorAll('.card[data-exp]'));
-  const pills = Array.from(document.querySelectorAll('.pill'));
-  const topbar = document.getElementById('topbar');
-  const topCount = document.getElementById('topCount');
-  const topBar = document.getElementById('topBar');
-  const fab = document.getElementById('fab');
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  if ('IntersectionObserver' in window && !reduce) {
-    const vh = window.innerHeight;
-    cards.forEach(c => { if (c.getBoundingClientRect().top > vh) c.classList.add('pre'); });
-    const io = new IntersectionObserver(es => es.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.remove('pre'); io.unobserve(e.target); }
-    }), { threshold: 0.12 });
-    cards.forEach(c => io.observe(c));
-    setTimeout(() => cards.forEach(c => c.classList.remove('pre')), 4000);
-  }
-
-  function onScroll() {
-    const y = window.scrollY, vh = window.innerHeight;
-    let current = 0;
-    cards.forEach(c => { if (c.getBoundingClientRect().top < vh * 0.5) current = +c.dataset.exp; });
-    const exp = document.getElementById('experiencias').getBoundingClientRect();
-    topbar.classList.toggle('show', y > vh * 0.75);
-    fab.classList.toggle('show', y > vh * 0.75 && document.getElementById('reservar').getBoundingClientRect().top > vh);
-    if (current) {
-      topCount.textContent = 'Experiencia ' + current + ' de 10';
-      pills.forEach(p => p.classList.toggle('active', +p.dataset.nav === current));
-    }
-    if (exp.bottom < 0) topCount.textContent = 'Elige tu plan';
-    topBar.style.width = Math.max(4, Math.min(100, current * 10)) + '%';
-  }
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-})();
-
-/* Envío del formulario a la hoja de leads de Hábitat Suramérica */
-(function () {
-  const form = document.getElementById('cc-form');
-  const msg = document.getElementById('form-msg');
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    if (!form.checkValidity()) { form.reportValidity(); return; }
-    const raw = new FormData(form);
-    const plan = raw.get('plan') || '';
-    let cel = (raw.get('celular') || '').trim();
-    if (cel.startsWith('+')) cel = "'" + cel;
-    const qs = new URLSearchParams(location.search);
-    const data = new URLSearchParams({
-      nombre: raw.get('nombre') || '',
-      celular: cel,
-      email: raw.get('email') || '',
-      para_quien: raw.get('para_quien') || '',
-      cuando: raw.get('cuando') || '',
-      sede: 'Suramérica',
-      servicio: 'Hábitat Country Club - Plan ' + plan,
-      datos: raw.get('politica') ? 'Sí' : 'No',
-      fuente_lead: 'Landing Hábitat Country Club',
-      utm_source: qs.get('utm_source') || '',
-      utm_medium: qs.get('utm_medium') || '',
-      utm_campaign: qs.get('utm_campaign') || '',
-      utm_content: qs.get('utm_content') || '',
-      utm_term: qs.get('utm_term') || '',
-      url_origen: location.href
-    });
-
-    if (!ES_PRODUCCION) {
-      msg.hidden = false;
-      msg.textContent = 'Vista previa: el formulario funciona, pero aquí no envía datos a la hoja de leads. Plan elegido: ' + plan + '.';
-      return;
-    }
-
-    const btn = form.querySelector('button[type="submit"]');
-    btn.disabled = true; btn.textContent = 'Enviando...';
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event: 'lead_country_club', plan: plan });
-    fetch(LEADS_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: data })
-      .then(() => setTimeout(() => { location.href = form.getAttribute('action'); }, 700))
-      .catch(() => {
-        btn.disabled = false; btn.textContent = 'Quiero reservar';
-        msg.hidden = false; msg.textContent = 'No pudimos enviar tus datos. Revisa tu conexión e inténtalo de nuevo, o escríbenos por WhatsApp.';
-      });
-  });
-})();
-</script>
+                    document.getElementById("price-usd").innerText = `USD ${priceUSD}`;
+                    document.getElementById("rate-usd").innerText = `*TRM: $ ${trmUSD}`;
+                    
+                    document.getElementById("price-eur").innerText = `€ ${priceEUR}`;
+                    document.getElementById("rate-eur").innerText = `*Tasa de cambio: $ ${trmEUR}`;
+                })
+                .catch(error => {
+                    console.error("Error fetching exchange rates:", error);
+                    document.getElementById("price-usd").innerText = "No disponible";
+                    document.getElementById("price-eur").innerText = "No disponible";
+                });
+        });
+    </script>
 </body>
 </html>
+<!-- Auto-deploy test -->
