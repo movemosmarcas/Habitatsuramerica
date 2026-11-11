@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     params.append(pair[0], pair[1]);
                 }
                 
-                fetch('https://script.google.com/macros/s/AKfycbz8MC4A8DD1eemyNkXzTuT6NyLD8c3whbPgtBoraOp1IowfAmbiHRwGTgG25LBBNtcnkA/exec', {
+                fetch('https://script.google.com/macros/s/AKfycbzV1AK68N5-_WDim9R1V1-qwV4rWrjugy55QhVVhGEKadeM5yZVyZMB4zKBTCWmuYsL/exec', {
                     method: 'POST',
                     mode: 'no-cors',
                     headers: {
