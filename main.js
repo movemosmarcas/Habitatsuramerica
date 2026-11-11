@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // --- NUEVO: CAPTURAR UTMS Y DATOS DE ORIGEN ---
                 const urlParams = new URLSearchParams(window.location.search);
                 formData.append('fuente_lead', 'Landing Page Caluce');
+                formData.append('sheet_name', 'Leads Suramérica');
                 formData.append('utm_source', urlParams.get('utm_source') || '');
                 formData.append('utm_medium', urlParams.get('utm_medium') || '');
                 formData.append('utm_campaign', urlParams.get('utm_campaign') || '');
