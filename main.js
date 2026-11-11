@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // --- NUEVO: CAPTURAR UTMS Y DATOS DE ORIGEN ---
                 const urlParams = new URLSearchParams(window.location.search);
                 formData.append('fuente_lead', 'Landing Page Caluce');
+                formData.append('sheet_name', 'Leads Suramérica');
                 formData.append('utm_source', urlParams.get('utm_source') || '');
                 formData.append('utm_medium', urlParams.get('utm_medium') || '');
                 formData.append('utm_campaign', urlParams.get('utm_campaign') || '');
@@ -51,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     params.append(pair[0], pair[1]);
                 }
                 
-                fetch('https://script.google.com/macros/s/AKfycbz8MC4A8DD1eemyNkXzTuT6NyLD8c3whbPgtBoraOp1IowfAmbiHRwGTgG25LBBNtcnkA/exec', {
+                fetch('https://script.google.com/macros/s/AKfycbzV1AK68N5-_WDim9R1V1-qwV4rWrjugy55QhVVhGEKadeM5yZVyZMB4zKBTCWmuYsL/exec', {
                     method: 'POST',
                     mode: 'no-cors',
                     headers: {
